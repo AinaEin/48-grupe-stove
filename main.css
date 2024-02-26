@@ -1,0 +1,83 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.allStove {
+   /* background-color: black; */
+   display: grid;
+   place-items: center;
+}
+
+.stove {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 4px solid black;
+    height: 350px;
+    width: 350px;
+}
+
+.controlGroup { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border: 4px solid black;
+    height: 70px;
+    width: 350px;
+}
+
+.circle {
+    border: 2px solid black;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+
+.button {
+    border: 2px solid black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.red {
+    animation-name: circle;
+    animation-duration: 3s;
+}
+
+@keyframes circle {
+    0% {
+         background-color: transparent;
+    }
+
+    100% {
+         background-color: red;
+    }
+}
+
+.transparent {
+    animation-name: toCircle;
+    animation-duration: 3s;
+}
+
+@keyframes toCircle {
+    0% {
+         background-color: red;
+    }
+
+    100% {
+         background-color: transparent;
+    }
+}
